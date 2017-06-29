@@ -4,11 +4,21 @@ public class gugudan {
 	public static void main(String[] args){
 		System.out.print("구구단 출력기, 원하는 단을 입력해주세요 : ");
 		Scanner scanner = new Scanner(System.in);
+		int i;
 		int number = scanner.nextInt();
-		for(int i=1; i<10; i++){
+		System.out.println("for문을 통한 구구단 출력");
+		for(i=1; i<10; i++){
 			int result = number * i;
 			System.out.println(result);	
 		}
+		i = 1;
+		System.out.println("while문을 통한 구구단 출력");
+		while(i < 10){
+			int result = number * i;
+			System.out.println(result);
+			i++;
+		}
+//		반복되는 logic에는 반복문!
 //		result = number * 2;
 //		System.out.println(result);
 //		result = number * 3;
