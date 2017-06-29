@@ -7,6 +7,22 @@ public class gugudan {
 		int number = scanner.nextInt();
 		int result = number * 1;
 		System.out.println(result);
+		result = number * 2;
+		System.out.println(result);
+		result = number * 3;
+		System.out.println(result);
+		result = number * 4;
+		System.out.println(result);
+		result = number * 5;
+		System.out.println(result);
+		result = number * 6;
+		System.out.println(result);
+		result = number * 7;
+		System.out.println(result);
+		result = number * 8;
+		System.out.println(result);
+		result = number * 9;
+		System.out.println(result);
 		
 	}
 }
