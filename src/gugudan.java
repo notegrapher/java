@@ -6,18 +6,26 @@ public class gugudan {
 		Scanner scanner = new Scanner(System.in);
 		int i;
 		int number = scanner.nextInt();
-		System.out.println("for문을 통한 구구단 출력");
-		for(i=1; i<10; i++){
-			int result = number * i;
-			System.out.println(result);	
+//		System.out.println("for문을 통한 구구단 출력");
+		if(number >= 2 && number < 9){
+			for(i=1; i<10; i++){
+				int result = number * i;
+				System.out.println(result);	
+			}
 		}
-		i = 1;
-		System.out.println("while문을 통한 구구단 출력");
-		while(i < 10){
-			int result = number * i;
-			System.out.println(result);
-			i++;
+		
+		else{
+			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
 		}
+//		i = 1;
+//		System.out.println("while문을 통한 구구단 출력");
+//		while(i < 10){
+//			int result = number * i;
+//			System.out.println(result);
+//			i++; 
+//			// i = i + 1;
+//		}
+		
 //		반복되는 logic에는 반복문!
 //		result = number * 2;
 //		System.out.println(result);
