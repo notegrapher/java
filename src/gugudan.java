@@ -10,45 +10,32 @@ public class gugudan {
 		int number = scanner.nextInt();
 //		System.out.println("for문을 통한 구구단 출력");
 		if(number >= 2 && number < 9){
-			for(i=1; i<10; i++){
-				int result = number * i;
-				multi[i-1] = result;
-			}
+			multi = multiple(number);
 		}
 				
 		else{
 			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
 		}
 		
-		for(i=0; i<multi.length; i++){
-			System.out.println(multi[i]);
-		}
-//		i = 1;
-//		System.out.println("while문을 통한 구구단 출력");
-//		while(i < 10){
-//			int result = number * i;
-//			System.out.println(result);
-//			i++; 
-//			// i = i + 1;
+//		for(i=0; i<multi.length; i++){
+//			System.out.println(multi[i]);
 //		}
 		
-//		반복되는 logic에는 반복문!
-//		result = number * 2;
-//		System.out.println(result);
-//		result = number * 3;
-//		System.out.println(result);
-//		result = number * 4;
-//		System.out.println(result);
-//		result = number * 5;
-//		System.out.println(result);
-//		result = number * 6;
-//		System.out.println(result);
-//		result = number * 7;
-//		System.out.println(result);
-//		result = number * 8;
-//		System.out.println(result);
-//		result = number * 9;
-//		System.out.println(result);
+		print(multi);
+	}
+	
+	public static int[] multiple(int times){
+		int[] multi = new int[9];
 		
+		for(int i=1; i<multi.length+1; i++){
+			multi[i-1] = times * i;
+		}
+		
+		return multi;
+	}
+	
+	public static void print(int[] multi){
+		for(int i=0; i<multi.length; i++)
+			System.out.println(multi[i]);
 	}
 }
