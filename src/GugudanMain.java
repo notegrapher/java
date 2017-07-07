@@ -6,22 +6,9 @@ public class GugudanMain {
 		Scanner scanner = new Scanner(System.in);
 		int i, SIZE = 9;
 		
-		int number = scanner.nextInt();
-//		System.out.println("for문을 통한 구구단 출력");
-		int multi[][] = new int[number][number];
-		
-		if(number >= 2 && number < 10){
-//			multi = Gugudan.multiple(number);
-		}
-				
-		else{
-			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
-		}
-		
-//		for(i=0; i<multi.length; i++){
-//			System.out.println(multi[i]);
-//		}
-		
-		Gugudan.print(multi, number);
+//		int number = scanner.nextInt();
+		String str = scanner.nextLine();
+		String[] strArray = str.split(" ");
+		Gugudan.print(strArray);
 	}
 }
