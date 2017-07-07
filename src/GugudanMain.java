@@ -11,7 +11,7 @@ public class GugudanMain {
 		int multi[][] = new int[number][number];
 		
 		if(number >= 2 && number < 10){
-			multi = Gugudan.multiple(number);
+//			multi = Gugudan.multiple(number);
 		}
 				
 		else{
@@ -22,6 +22,6 @@ public class GugudanMain {
 //			System.out.println(multi[i]);
 //		}
 		
-		Gugudan.print(multi);
+		Gugudan.print(multi, number);
 	}
 }
